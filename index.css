@@ -1,0 +1,69 @@
+.app {
+    width: 661px;
+    height: 763px;
+    background: #C4C4C4;
+}
+input {
+    width: 500px;
+    height: 61px;
+    background: #FFFFFF;
+    border: none;
+    margin: 66px 0 0 77px;
+    font-size: 48px;
+}
+ul {
+    height: 220px;
+    width: 504px;
+    margin: 0 0 0 77px;
+    padding: 0;
+}
+ul .item {
+    box-sizing: border-box;
+    list-style: none;
+    height: 44px;
+    border: 2px solid #000000;
+    padding-left: 10px;
+    font-size: 30px;
+}
+.hidden{
+    display: none;
+}
+.show {
+    display: block;
+}
+.selected{
+    width:505px;
+    margin: 45px auto;
+}
+.selected__item{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #E27BEB;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+}
+
+.selected__text{
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.selected__delete{
+    width: 42px;
+    height: 38.5px;
+    position: relative;
+}
+
+.selected__delete img{
+    position: absolute;
+    width: 42px;
+    height: 38.5px;
+    cursor: pointer;
+}
+.selected__delete:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
