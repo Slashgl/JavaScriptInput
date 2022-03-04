@@ -13,20 +13,18 @@ input.onkeyup = debounce(({target}) =>
     500
 )
 
-function addingAutocompleteResult(items) {
+function addingAutocompleteResult(items, e) {
     ul.replaceChildren()
     items.slice(0,5).map(item =>{
         const li = document.createElement('li');
         li.classList.add('item');
         li.innerHTML = item.name;
-        li.addEventListener('click', () => {
+        li.addEventListener('click', (e) => {
             addingListResult(item);
             input.value = '';
         })
         ul.append(li)
-
-    } )
-
+    })
 }
 
 
